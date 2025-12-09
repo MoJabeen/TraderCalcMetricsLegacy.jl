@@ -1,4 +1,4 @@
-name = "DivCalcMetrics"
+name = "TraderCalcMetricsLegacy"
 uuid = "9b4f39bf-ac5c-494c-92e8-5d553169dc1c"
 authors = ["Dainish Jabeen"]
 version = "3.3.0"
