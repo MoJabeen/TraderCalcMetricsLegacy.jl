@@ -1,4 +1,4 @@
-module DivCalcMetrics
+module TraderCalcMetricsLegacy
 
     using DataFrames
     using Dates
@@ -12,10 +12,9 @@ module DivCalcMetrics
 
     export 
         calcframe,
-        calcframe_new,
-        swingframe_new,
         swingframe,
         swinguframe,
+        swingbframe,
         swingdframe
 
     include("frames.jl")
