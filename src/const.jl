@@ -1,4 +1,4 @@
-const ERRORVAL = missing
+const ERRORVAL = -999999999 #Sentinel value as NaN and Missing dont work well
 const ERRORDATE = Dates.DateTime("2012-01-01")
 
 const SEGMENT_TIMES = [
