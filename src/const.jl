@@ -1,4 +1,4 @@
-const ERRORVAL = NaN
+const ERRORVAL = missing
 const ERRORDATE = Dates.DateTime("2012-01-01")
 
 const SEGMENT_TIMES = [
