@@ -2593,11 +2593,6 @@ end
 function swinguframe()
 
     return DataFrame(
-        id=Int[],
-        
-        timestamp = DateTime[],
-        time_added = DateTime[],
-
         open = Float64[],
         close = Float64[],
         high = Float64[],
@@ -3552,11 +3547,6 @@ end
 function swingbframe()
 
     return DataFrame(
-        id=Int[],
-        
-        timestamp = DateTime[],
-        time_added = DateTime[],
-
         open = Float64[],
         close = Float64[],
         high = Float64[],
@@ -4795,11 +4785,6 @@ end
 function swingdframe()
 
     return DataFrame(
-        id=Int[],
-        
-        timestamp = DateTime[],
-        time_added = DateTime[],
-
         open = Float64[],
         close = Float64[],
         high = Float64[],
