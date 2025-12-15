@@ -741,7 +741,7 @@ function calculate!(metrics::EMA, data::SegmentData)
         metricField = SEGMENT_TO_METRIC[segment]
         segmentVal = getfield(segmentData, segment)
         metricVal = getfield(metrics.timeSegments, metricField)
-        
+
         setfield!(metrics.timeSegments, metricField, 
             size(segmentVal, 1) >= minVal ? _ema(segmentVal,metricVal) : 0.0)
     end

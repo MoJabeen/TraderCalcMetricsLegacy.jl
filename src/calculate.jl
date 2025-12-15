@@ -342,8 +342,8 @@ function calculate!(metric::OBV,data::SegmentData)
         data.oneHour[!,:close] = number.(data.oneHour[!,:close])
     end
 
-    if isempty(data.oneHour)
-        @warn "empty value, obv",err
+    if nrow(data.oneHour) < 2 
+        @warn "empty value, obv"
         metric.value = 0.0 #A more reliable reset on OBV value
     else
         latestData = last(data.oneHour)
