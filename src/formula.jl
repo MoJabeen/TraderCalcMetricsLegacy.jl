@@ -80,7 +80,7 @@ function _ema(data::Vector, prevEMA,smoothing::Int=2)
         data = number.(data)
     end
 
-    if size(data,1) == 481
+    if size(data,1) == 2882
         @info "check data lentgh" data
     end
 
