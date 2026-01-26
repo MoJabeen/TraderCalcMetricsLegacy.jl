@@ -342,7 +342,7 @@ function calculate!(metric::OBV,data::SegmentData)
         data.oneHour[!,:close] = number.(data.oneHour[!,:close])
     end
 
-    if nrow(data.oneHour) < 2 
+    if nrow(data.oneHour) <= 2 
         @warn "empty value, obv"
         metric.value = 0.0 #A more reliable reset on OBV value
     else
